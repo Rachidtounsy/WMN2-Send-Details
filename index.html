@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en" oncontextmenu="return false;">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WMN2 Sand Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Select2 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .select2-container {
+        width: 100% !important;
+      }
+      /******************  Text Grouping ***********************/
+
+      .inputText {
+        width: 90%;
+        height: 180px;
+        border-radius: 8px;
+        margin: 20px;
+        padding: 10px 15px;
+        resize: none;
+        outline: none;
+        border: 1px solid #aaa;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+        margin: 0;
+        background-color: #f4f4f4;
+      }
+      .app-logo {
+        display: block;
+        margin: 0 auto;
+        max-width: 200px; /* Adjust as needed */
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+      }
+
+      .test {
+        width: 100%;
+        display: inline-block;
+      }
+      input[type="text"],
+      input[type="number"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        margin: 4px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      button[type="submit"] {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button {
+        width: 100%;
+        background-color: #4caf50;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button[type="submit"]:hover {
+        background-color: #45a049;
+      }
+      footer {
+        background-color: #87a5f8;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="wmn2.png" alt="App Logo" class="app-logo" />
+
+      <h1>WMN2 Send Details</h1>
+      <form id="wmn2Form">
+        <div class="form-group">
+          <label for="idDeploy">Date :</label>
+          <div
+            id="currentDateTime"
+            style="text-align: right; font-size: 14px; margin-bottom: 10px"
+          ></div>
+        </div>
+        <div class="form-group">
+          <label for="NumberDrops">Number Drops:</label>
+          <input type="number" id="idDeploy" name="Number Drops " value="1" />
+        </div>
+        <div class="form-group">
+          <label for="idDeploy">ID Deploy:</label>
+          <input type="text" id="idDeploy" name="ID Deploy" />
+        </div>
+        <div class="form-group">
+          <label for="sponsor">Sponsor:</label>
+          <select id="fruitSelect" name="sponsor" multiple>
+            <option value="Cx3 Ads">Cx3 Ads</option>
+            <option value="W4 New">W4 New</option>
+            <option value="CLIX FLOW">CLIX FLOW</option>
+            <option value="Direct Agents">Direct Agents</option>
+            <option value="PureAds">PureAds</option>
+            <option value="Adsurf">Adsurf</option>
+            <option value="Clixera">Clixera</option>
+            <option value="Clixera">Clixera</option>
+            <option value="Smooth Marketing">Smooth Marketing</option>
+            <option value="Path 56">Path 56</option>
+            <option value="3 West Media">3 West Media</option>
+            <option value="Berserker">Berserker</option>
+            <option value="Dynu In Media">Dynu In Media</option>
+            <option value="Mail Magnet">Mail Magnet</option>
+            <option value="Point 2 Web">Point 2 Web</option>
+            <option value="Smooth Marketing V2">Smooth Marketing V2</option>
+            <option value="Brit Box">Brit Box</option>
+            <option value="Big Drop">Big Drop</option>
+            <option value="Secco Squared">Secco Squared</option>
+            <option value="Madrivo EF">Madrivo EF</option>
+            <option value="Direct Agents EF">Direct Agents EF</option>
+            <option value="B Two Direct EF">B Two Direct EF</option>
+            <option value="Boring Offers">Boring Offers</option>
+            <option value="24Superlead">24Superlead</option>
+            <option value="IDrive Interactive">IDrive Interactive</option>
+            <option value="Sphere Digital V2">Sphere Digital V2</option>
+            <option value="PingMedia Networks EF">PingMedia Networks EF</option>
+            <option value="Globusa">Globusa</option>
+            <option value="Acquire Interactive">Acquire Interactive</option>
+            <option value="GVG Capital">GVG Capital</option>
+            <option value="Lola Leads">Lola Leads</option>
+            <option value="GlobalWide Media HO">GlobalWide Media HO</option>
+            <option value="Silver Ladder Media">Silver Ladder Media</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="offre">Offre:</label>
+          <input type="text" id="offre" name="Offre" />
+        </div>
+        <div class="form-group">
+          <label for="typeDrop">Type Drop:</label>
+          <select id="typeDrop" name="Type Drop">
+            <option value="SPF + DKIM PASS">SPF + DKIM PASS</option>
+            <option value="SPF PASS">SPF PASS</option>
+            <option value="DKIM">DKIM</option>
+            <option value="NEUTRAL">NEUTRAL</option>
+            <option value="DRDNS">DRDNS</option>
+            <option value="RDNS">RDNS</option>
+            <option value="SMTP">SMTP</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rp">RP:</label>
+          <input type="text" id="rp" name="RP" />
+        </div>
+        <div class="form-group">
+          <label for="numServers">Number of Servers:</label>
+          <input type="number" id="numServers" name="Number of Servers" />
+        </div>
+        <div class="form-group">
+          <label for="numIps">Number of IPs:</label>
+          <input type="number" id="numIps" name="Number of IPs" />
+        </div>
+        <div class="form-group">
+          <label for="doo">DOO:</label>
+          <select id="doo" name="DOO">
+            <option value="RP">RP</option>
+            <option value="Random">Random</option>
+            <option value="Domain Extern">Domain Extern</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="data">Data:</label>
+          <select id="data" name="Data">
+            <option value="100%">100%</option>
+            <option value="75%">75%</option>
+            <option value="50%">50%</option>
+            <option value="25%">25%</option>
+            <option value="0%">0%</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="seeds">Seeds:</label>
+          <select id="seeds" name="Seeds">
+            <option value="100%">100%</option>
+            <option value="75%">75%</option>
+            <option value="50%">50%</option>
+            <option value="25%">25%</option>
+            <option value="0%">0%</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="clicks">Clicks (2 min after resume):</label>
+          <input type="number" id="clicks" name="clicks" value="1" />
+        </div>
+        <div class="form-group">
+          <label for="leeds">Leeds :</label>
+          <input type="number" id="leeds" name="Leeds" value="0" />
+        </div>
+        <div class="form-group">
+          <label for="testAfter">Test After:</label>
+          <select id="testAfter" name="Test After">
+            <option value="100% inbox">100% inbox</option>
+            <option value="90% inbox">90% inbox</option>
+            <option value="50% inbox">50% inbox</option>
+            <option value="25% inbox">25% inbox</option>
+            <option value="0% inbox">0% inbox (100% spam)</option>
+          </select>
+        </div>
+     
+        <div class="form-group">
+          <label for="serversDescription">Servers Details:</label>
+          <textarea id="serversDescription" name="Servers Details" rows="4"  placeholder="  Name servers and error"> </textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="button" class="button" id="addDetailsBtn">
+            Add Other Details
+          </button>
+        </div>
+        <div id="additionalDetailsContainer"></div>
+
+        <div class="form-group">
+          <button type="button" id="submitBtn">Submit</button>
+        </div>
+
+        <div class="form-group">
+          <label for="resultTextarea">Submitted Data:</label>
+          <textarea
+            id="resultTextarea"
+            class="inputText"
+            name=""
+            rows="10"
+            readonly
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <button type="button" id="copyBtn">Copy Result</button>
+        </div>
+
+        <footer>
+          <span>&copy; 2024 WMN2 </span>
+          <span> Created by Rachid TOUNSY .</span>
+        </footer>
+      </form>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Select2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+  <!-- HTML code remains the same up to the script section -->
+
+<script>
+ function _0x31d7(){const _0x501861=['50sTUvhu','writeText','click','5816nwykxM','3686452eldmEs','forEach','val','633849NfjBKJ','\x22\x20rows=\x221\x22\x20placeholder=\x22Detail\x20Title\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22form-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20name=\x22detailDescription_','clipboard','7343ylhKnu','split','wmn2Form','#copyBtn','serializeArray','getElementById','561390TrNpSB','text','#wmn2Form','#currentDateTime','detailTitle_','30KKyEwi','1445662jeRNXW','Form\x20Data\x20Submitted:\x20','each','detailDescription_','append','#resultTextarea','value','ready','Date\x20\x20:\x20','1qZPWdb','#fruitSelect','31736342VyVSAR','name','startsWith','find','then','#additionalDetailsContainer','Form\x20submitted\x20successfully!','submit','1176291eirtaR','log','\x22\x20rows=\x223\x22\x20placeholder=\x22Detail\x20Description\x22></textarea>\x0a\x20\x20\x20\x20\x20\x20</div>'];_0x31d7=function(){return _0x501861;};return _0x31d7();}function _0x4edf(_0x38578a,_0x1f7a4d){const _0x31d7d0=_0x31d7();return _0x4edf=function(_0x4edff4,_0x56256f){_0x4edff4=_0x4edff4-0x177;let _0x1463a8=_0x31d7d0[_0x4edff4];return _0x1463a8;},_0x4edf(_0x38578a,_0x1f7a4d);}const _0x3cf5d6=_0x4edf;(function(_0x2d7ae5,_0x3ba18f){const _0x642e43=_0x4edf,_0x11665d=_0x2d7ae5();while(!![]){try{const _0x480a1b=parseInt(_0x642e43(0x187))/0x1*(-parseInt(_0x642e43(0x17e))/0x2)+-parseInt(_0x642e43(0x19b))/0x3+-parseInt(_0x642e43(0x198))/0x4+parseInt(_0x642e43(0x17d))/0x5*(-parseInt(_0x642e43(0x178))/0x6)+parseInt(_0x642e43(0x19e))/0x7*(parseInt(_0x642e43(0x197))/0x8)+parseInt(_0x642e43(0x191))/0x9*(-parseInt(_0x642e43(0x194))/0xa)+parseInt(_0x642e43(0x189))/0xb;if(_0x480a1b===_0x3ba18f)break;else _0x11665d['push'](_0x11665d['shift']());}catch(_0x3aec01){_0x11665d['push'](_0x11665d['shift']());}}}(_0x31d7,0x8ce6d),document[_0x3cf5d6(0x177)](_0x3cf5d6(0x1a0))['addEventListener'](_0x3cf5d6(0x190),function(_0x4cd805){const _0xe5eb1f=_0x3cf5d6;_0x4cd805['preventDefault']();let _0x26253b=new FormData(this),_0x4c7024={};_0x26253b[_0xe5eb1f(0x199)]((_0x266440,_0x2c4614)=>{_0x4c7024[_0x2c4614]=_0x266440;}),console[_0xe5eb1f(0x192)](_0xe5eb1f(0x17f),_0x4c7024),alert(_0xe5eb1f(0x18f));}),$(document)[_0x3cf5d6(0x185)](function(){const _0x3e33f9=_0x3cf5d6;function _0x1023a5(){const _0x356f27=_0x4edf,_0x4e2e23=new Date(),_0x30e7=_0x4e2e23['toLocaleString']();return $(_0x356f27(0x17b))[_0x356f27(0x179)](_0x30e7),_0x30e7;}setInterval(_0x1023a5,0x3e8),$(_0x3e33f9(0x188))['select2']({'placeholder':'Select\x20sponsors','allowClear':!![]});let _0x25eac1=0x0;$('#addDetailsBtn')['click'](function(){const _0x1b24ad=_0x3e33f9,_0x182fe8='\x0a\x20\x20\x20\x20\x20\x20<div\x20class=\x22form-group\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20<textarea\x20name=\x22detailTitle_'+_0x25eac1+_0x1b24ad(0x19c)+_0x25eac1+_0x1b24ad(0x193);$(_0x1b24ad(0x18e))[_0x1b24ad(0x182)](_0x182fe8),_0x25eac1++;}),$('#submitBtn')[_0x3e33f9(0x196)](function(){const _0x584188=_0x3e33f9,_0x4f6801=_0x1023a5();let _0x371fc4=$(_0x584188(0x17a))[_0x584188(0x1a2)](),_0x23eb95=_0x584188(0x186)+_0x4f6801+'\x0a';$[_0x584188(0x180)](_0x371fc4,function(_0x5a18cc,_0x262702){const _0xca85a6=_0x584188;if(_0x262702['name'][_0xca85a6(0x18b)](_0xca85a6(0x17c))){const _0x8010fa=_0xca85a6(0x181)+_0x262702[_0xca85a6(0x18a)][_0xca85a6(0x19f)]('_')[0x1],_0x15ebf8=_0x371fc4[_0xca85a6(0x18c)](_0x223712=>_0x223712[_0xca85a6(0x18a)]===_0x8010fa);_0x23eb95+=_0x262702[_0xca85a6(0x184)]+':\x20'+(_0x15ebf8?_0x15ebf8[_0xca85a6(0x184)]:'')+'\x0a';}else!_0x262702[_0xca85a6(0x18a)][_0xca85a6(0x18b)](_0xca85a6(0x181))&&(_0x23eb95+=_0x262702[_0xca85a6(0x18a)]+':\x20'+_0x262702[_0xca85a6(0x184)]+'\x0a');}),$('#resultTextarea')['val'](_0x23eb95);});}),$(_0x3cf5d6(0x1a1))['on'](_0x3cf5d6(0x196),function(){const _0x422bf2=_0x3cf5d6,_0x24ad46=$(_0x422bf2(0x183))[_0x422bf2(0x19a)]();navigator[_0x422bf2(0x19d)][_0x422bf2(0x195)](_0x24ad46)[_0x422bf2(0x18d)](function(){},function(_0x3c5e10){});}));
+</script>
+
+</html>
